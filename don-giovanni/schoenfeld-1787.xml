@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../src/vmachine.xsl" type="text/xsl" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Il dissoluto punito</title>
+                <author>Lorenzo Da Ponte</author>
+                <editor>Laurent Pugin</editor>
+                <respStmt>
+                    <resp>Wolfgang Amadeus Mozart</resp>
+                    <name>Composer</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/>
+                <pubPlace/>
+                <date/>
+                <authority/>
+                <availability>
+                    <p/>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p><pb facs="1d08b82d-2fe2-4c0e-b5c1-d58a010b6356"/>Il 
+                <lb/>dissoluto 
+                <lb/>punito. 
+                <lb/>O sia 
+                <lb/>Il D. Giovanni. 
+                <lb/>Dramma giocoso 
+                <lb/>in due atti. 
+                <lb/>Da rappresentarsi 
+                <lb/>nel teatro di Praga l'anno 1787. 
+                <lb/>In Praga. 
+                <lb/>di Schoenfeld.
+            </p>
+        </body>
+    </text>
+</TEI>

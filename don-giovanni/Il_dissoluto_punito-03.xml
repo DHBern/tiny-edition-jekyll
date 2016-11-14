@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../src/vmachine.xsl" type="text/xsl" ?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Il dissoluto punito</title>
+                <author>Lorenzo Da Ponte</author>
+                <respStmt>
+                    <resp>Composed by</resp>
+                    <name>Wolfgang Amadeus Mozart</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text Encoding by </resp>
+                    <name>Laurent Pugin</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Laurent Pugin</publisher>
+                <availability status="restricted">
+                    <p>This text is made available for teaching and illustration purposes only.</p>
+                </availability>
+            </publicationStmt>
+            <notesStmt>
+                <note type="biographical" anchored="true">
+                    The opera was commissioned as a result of the overwhelming success of Mozart's trip to Prague in January and February 1787. The subject matter may have been chosen in consideration of the long history of Don Juan operas in Prague; the genre of eighteenth-century Don Juan opera originated in Prague.    
+                </note>
+                <note type="critical" anchored="true">
+                    This example illustrates the collation of texts encoded without line break markup. Three sources were used for the preparation of this example.
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <p>The sources used include the first edition of 1787, the revised edition of 1788 and a re-edition of 1820</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <variantEncoding location="internal" method="parallel-segmentation"/>
+        </encodingDesc>
+        <revisionDesc>
+            <change>Initial encoding
+                <date>2016-11-14</date>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="../facsimile/schoenfeld-1781-001.jpg" xml:id="im-1787-001"/>
+        <graphic url="../facsimile/sordi-1788-001.jpg" xml:id="im-1788-001"/>
+        <graphic url="../facsimile/tamburini-1820-001.jpg" xml:id="im-1820-001"/>
+    </facsimile>
+    <text>
+        <front>
+            <div>
+                <listWit>
+                    <witness xml:id="wit-22947">Il dissoluto punito - Schoenfeld 1787 - text</witness>
+                    <witness xml:id="wit-22948">Il dissoluto punito - Sordi 1788 - text</witness>
+                    <witness xml:id="wit-22949">Il dissoluto punito - Tamburini 1820 - text</witness>
+                </listWit>
+            </div>
+        </front>
+        <body>
+            <pb ed="wit-22947" facs="#im-1787-001"/>
+            <pb ed="wit-22948" facs="#im-1788-001"/>
+            <pb ed="wit-22949" facs="#im-1820-001"/>
+            <p>Il dissoluto punito. <app>
+                    <rdg wit="#wit-22949">Ossia Don</rdg>
+                    <rdg wit="#wit-22948">O sia Il D.</rdg>
+                    <rdg wit="#wit-22947">O sia Il D.</rdg>
+                </app> Giovanni <app>
+                    <rdg wit="#wit-22949">Tenorio</rdg>
+                    <rdg wit="#wit-22948"/>
+                    <rdg wit="#wit-22947"/>
+                </app> . Dramma <app>
+                    <rdg wit="#wit-22949">semiserio per musica</rdg>
+                    <rdg wit="#wit-22948">giocoso</rdg>
+                    <rdg wit="#wit-22947">giocoso</rdg>
+                </app> in due atti <app>
+                    <rdg wit="#wit-22949">da representarsi</rdg>
+                    <rdg wit="#wit-22948">. Da rappresentarsi</rdg>
+                    <rdg wit="#wit-22947">. Da rappresentarsi</rdg>
+                </app> nel teatro <app>
+                    <rdg wit="#wit-22949">Re il Carnovale dell</rdg>
+                    <rdg wit="#wit-22948">di Corte l</rdg>
+                    <rdg wit="#wit-22947">di Praga l</rdg>
+                </app> &apos; anno <app>
+                    <rdg wit="#wit-22949">1820</rdg>
+                    <rdg wit="#wit-22948">1788</rdg>
+                    <rdg wit="#wit-22947">1787</rdg>
+                </app> .<lb/>
+                <app>
+                    <rdg wit="#wit-22949">Milano dalla tipographia Tamburini Contrada S</rdg>
+                    <rdg wit="#wit-22948">In Vienna,nella imper</rdg>
+                    <rdg wit="#wit-22947">In Praga</rdg>
+                </app> . <app>
+                    <rdg wit="#wit-22949">Raffaele</rdg>
+                    <rdg wit="#wit-22948">stamperia dei Sordi e Muti</rdg>
+                    <rdg wit="#wit-22947">Di Schoenfeld</rdg>
+                </app> .<lb/>
+                <lb/>
+                <lb/>
+            </p>
+        </body>
+    </text>
+</TEI>
