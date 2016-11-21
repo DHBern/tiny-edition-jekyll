@@ -1,0 +1,7 @@
+# Site settings
+title: Don Giovanni collations
+email: lxpugin@gmail.com
+baseurl: "" 
+
+# Build settings
+markdown: kramdown
