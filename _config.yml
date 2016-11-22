@@ -17,5 +17,5 @@ top_menu:
       url: "description.html"
       text: Description
     - id: nowhere
-      url: broken.html
+      url: "broken.html"
       text: Try it
