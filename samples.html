@@ -1,15 +1,32 @@
 ---
 layout: default
 title: Sample collations
+
+collations:
+    - id: il_dissoluto
+      name: "Il dissoluto punito"
+      files:
+          - id: ex01
+            name: "A collation with line break markup"
+            data: don-giovanni/Il_dissoluto_punito-01.xml
+          - id: ex02
+            name: "A collation without line break markup (2 sources)"
+            data: don-giovanni/Il_dissoluto_punito-02.xml
+          - id: ex03
+            name: "A collation without line break markup (3 sources)"
+            data: don-giovanni/Il_dissoluto_punito-03.xml
 ---
 <h1>Sample Collations</h1>
 
 <h4>All texts are encoded according to TEI's Parallel Segmentation method and were collated using Juxta Commons.</h4>
 
-<h3>Editions encoded with parallel segmentation methods</h3>
-<h4>Il dissoluto punito</h4>
-<ul>
-    <li>A collation with line break markup – <a href="don-giovanni/Il_dissoluto_punito-01.xml">xml</a></li>
-    <li>A collation without line break markup (2 sources) – <a href="don-giovanni/Il_dissoluto_punito-02.xml">xml</a></li>
-    <li>A collation without line break markup (3 sources) – <a href="don-giovanni/Il_dissoluto_punito-03.xml">xml</a></li>
-</ul>
+<h3>Editions encoded with the parallel segmentation method</h3>
+
+{% for c in page.collations %}
+    <h4>{{ c.name }}</h4>
+    <ul>
+        {% for f in c.files %}
+         <li>{{ f.name }}– <a href="{{ f.data }}">xml</a></li>
+        {% endfor %}
+    </ul>
+{% endfor %}

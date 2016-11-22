@@ -13,6 +13,9 @@ top_menu:
     - id: samples
       url: "samples.html"
       text: Samples
+    - id: description
+      url: "description.html"
+      text: Description
     - id: nowhere
       url: "broken.html"
       text: Try it
