@@ -18,4 +18,4 @@ top_menu:
       text: Description
     - id: nowhere
       url: broken.html
-      test: Try it
+      text: Try it
