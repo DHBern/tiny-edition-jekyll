@@ -1,5 +1,9 @@
 <div id="navbar">
     <div class="links">
-         <span><a href="samples.html">Sample Collations</a></span>
+        {% for s in site.top_menu %}
+            <span>
+                <a href="{{ s.url }}">{{ s.text }}</a>
+            </span>
+        {% endfor %}
     </div>
 </div>

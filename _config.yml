@@ -5,3 +5,11 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
+
+top_menu:
+    - id: home
+      url: "index.html"
+      text: Home
+    - id: samples
+      url: "samples.html"
+      text: Samples
